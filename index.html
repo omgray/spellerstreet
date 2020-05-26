@@ -43,6 +43,14 @@
             padding: 0px;
             background-image: url('images/SpellerPhoto2.jpg');
         }
+        .banner-image {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+        .banner-mobile {
+            padding: 0;
+        }
         .content {
             color: rgb(194, 59, 51);
             background-color: rgb(252, 250, 225);
@@ -118,14 +126,14 @@
         }
         .foot-icon {
             margin: 0 auto;
-            height: 150px;
+            max-height: 150px;
             display: inline-block;
         }
         .foot-icon:hover {
             color: black;
         }
         .foot-text {
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin: 30px auto;
         }
 
@@ -141,7 +149,8 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-12 banner"></div>
+            <div class="col-sm-12 banner d-none d-sm-block"></div>
+            <div class="col-sm-12 d-sm-none banner-mobile"><img src="images/SpellerPhoto2.jpg" alt="" class="banner-image"></div>
         </div>
         
         <div class="row content">
@@ -188,7 +197,7 @@
         </div>
 
         <div class="row red">
-            <span class="foot-text">Footer Flavor Text. Copyright &copy; 2020 Speller Street Films</span>
+            <span class="foot-text">Copyright &copy; 2020 Speller Street Films</span>
         </div>
     </div>
 
